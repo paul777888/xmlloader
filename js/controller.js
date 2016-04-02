@@ -36,6 +36,7 @@ Controller.prototype = {
         if(item){
             if (/\w=\w/.test(item)) {
                 this._model.addItem(item.toUpperCase());
+                this._view._elements.errMsg.style.display='none';
             }else{
                 this._view._elements.errMsg.innerHTML='Value is not added, Please type in correct key=value';
                 this._view._elements.input.value='';
