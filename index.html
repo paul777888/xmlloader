@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel='stylesheet' href='css/style.css'>
+        <link rel='stylesheet' href='css/mdeiaqueries.css'>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class='row'>
+                <h2>Test</h2>
+            </div>
+            <div class='row'>
+                <label><h3>Key/Value Pair</h3></label>
+                <input id='key-value' name='key-value' placeholder="Name=Value"/>
+                <input id='plusBtn' value='Add' type='button'>
+                <div id='errMsg'></div>
+                <br><br>
+                <label><h4>Key/Value Pair List</h4></label>
+            </div>
+            <div class='row'>
+                <div class='list'>
+                    <select id="list" class="control" size="15"></select>
+                </div>
+                <button id="minusBtn">DELETE</button><br><br>
+                <button id="sortByNameBtn">Sort By Name</button><br><br>
+                <button id="sortByValueBtn">Sort By Value</button><br><br>
+                <button id="showXMLBtn">Show XML</button><br><br>
+            </div>
+        </div>    
+        <script src='js/obs.js'></script>
+        <script src='js/listModel.js'></script>           
+        <script src='js/listView.js'></script>           
+        <script src='js/controller.js'></script>
+    </body>
+</html>
